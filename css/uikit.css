@@ -13328,4 +13328,113 @@ h1, h2, h3 {
   transform: scale(1.02);
 }
 
+.slider-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
 
+.slider-img:hover {
+  transform: scale(1.02);
+}
+
+.uk-overlay-slide-bottom {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* fundal ușor transparent */
+  color: #fff;
+}
+
+.hero-evenimente {
+  background-image: url('../img/event-banner-hero.webp');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-evenimente .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* mai întunecat pentru lizibilitate */
+  z-index: 1;
+}
+
+.hero-evenimente .hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Container general pentru quiz */
+.quiz-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+/* Titlul secțiunii de quiz */
+.quiz-container h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Întrebarea */
+.quiz-question,
+#quiz-form .uk-form-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Varianta de răspuns */
+.quiz-option,
+#quiz-form .uk-form-controls label {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#quiz-form .uk-radio {
+  margin-right: 10px;
+}
+
+/* Butoanele Next și Submit */
+.quiz-buttons .uk-button {
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  margin-top: 15px;
+}
+
+/* Rezultatul final */
+#quiz-result {
+  font-size: 1.3rem;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #d7f9e8;
+  margin-top: 30px;
+  border: 2px solid #42b983;
+  border-left: 6px solid #32d296;
+  line-height: 1.6;
+}
+
+/* Responsive padding */
+@media (max-width: 640px) {
+  .quiz-container {
+    padding: 20px;
+  }
+}

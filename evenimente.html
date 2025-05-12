@@ -41,59 +41,111 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="uk-section uk-section-primary uk-light uk-flex uk-flex-middle" style="background-image: url('img/event-banner-hero.webp'); background-size: cover; background-position: center; height: 70vh;">
-    <div class="uk-container">
-      <h1 class="uk-heading-large">Participă la evenimentele noastre de lectură!</h1>
-      <p class="uk-text-lead">Discuții, lansări de carte, cluburi de lectură și întâlniri cu autori.</p>
-    </div>
+ <!-- HERO -->
+  <section class="uk-section uk-section-primary uk-light uk-flex uk-flex-middle hero-evenimente">
+    <div class="uk-container uk-text-center">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="uk-heading-large">Participă la evenimentele noastre de lectură!</h1>
+        <p class="uk-text-lead">Discuții, lansări de carte, cluburi de lectură și întâlniri cu autori.</p>
+      </div>
+  </div>
   </section>
 
-  <!-- TABEL EVENIMENTE -->
+<!-- TABEL EVENIMENTE -->
+<section class="uk-section uk-section-default">
+  <div class="uk-container">
+    <h2 class="uk-heading-line uk-text-center">
+      <span><span uk-icon="icon: calendar"></span> Evenimente din iulie</span>
+    </h2>
+    <table class="uk-table uk-table-divider uk-table-hover uk-table-middle">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Eveniment</th>
+          <th>Locație</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5 iulie</td>
+          <td>Picnic & Poezie: Lecturi în aer liber cu poeți invitați</td>
+          <td>Parcul Rozelor, Timișoara</td>
+        </tr>
+        <tr>
+          <td>13 iulie</td>
+          <td>Workshop: Recenzii creative & blogging de carte</td>
+          <td>Librăria La Două Bufnițe</td>
+        </tr>
+        <tr>
+          <td>27 iulie</td>
+          <td>Maraton de lectură nocturnă: cărți & ciocolată caldă</td>
+          <td>Cafeneaua Vineri 15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
   <section class="uk-section uk-section-default">
     <div class="uk-container">
-      <h2 class="uk-heading-line"><span><span uk-icon="icon: calendar"></span> Evenimente viitoare</span></h2>
-      <table class="uk-table uk-table-divider uk-table-hover">
-        <thead>
-          <tr>
-            <th>Data</th>
-            <th>Eveniment</th>
-            <th>Locație</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10 mai</td>
-            <td>Club de carte: Femei care aleargă cu lupii | Discuție liberă + ceai</td>
-            <td>La Două Bufnițe, Piața Unirii</td>
-          </tr>
-          <tr>
-            <td>15 mai</td>
-            <td>Atelier de scris recenzii literare cu Alina Purcaru</td>
-            <td>Librăria Cartea de Nisip</td>
-          </tr>
-          <tr>
-            <td>20 mai</td>
-            <td>Lansare de carte: Gustul cuvintelor de A. Popescu</td>
-            <td>Restaurant Whisper</td>
-          </tr>
-          <tr>
-            <td>25 mai</td>
-            <td>Reading Night & Chill – Open mic + muzică live</td>
-            <td>Cărturești Mercy</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 class="uk-heading-line uk-text-center"><span>Ce eveniment ți se potrivește?</span></h2>
+      <form id="quiz-form" class="uk-form-stacked">
+
+        <div class="quiz-step uk-margin">
+         <label class="uk-form-label">1. Ce gen de activitate preferi?</label>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="q1" value="carte"> Discuții despre cărți</label><br>
+            <label><input class="uk-radio" type="radio" name="q1" value="creativ"> Ateliere creative</label><br>
+            <label><input class="uk-radio" type="radio" name="q1" value="relax"> Relaxare cu muzică și lectură</label>
+          </div>
+        </div>
+
+        <div class="quiz-step uk-margin" hidden>
+          <label class="uk-form-label">2. În ce moment al zilei preferi evenimentele?</label>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="q2" value="carte"> Dimineața</label><br>
+            <label><input class="uk-radio" type="radio" name="q2" value="creativ"> După-amiaza</label><br>
+            <label><input class="uk-radio" type="radio" name="q2" value="relax"> Seara</label>
+          </div>
+        </div>
+
+        <div class="quiz-step uk-margin" hidden>
+         <label class="uk-form-label">3. Ce tip de locație preferi?</label>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="q3" value="relax"> Cafenea relaxantă</label><br>
+            <label><input class="uk-radio" type="radio" name="q3" value="creativ"> Spațiu cultural</label><br>
+            <label><input class="uk-radio" type="radio" name="q3" value="carte"> Librărie cozy</label>
+         </div>
+       </div>
+
+        <div class="quiz-step uk-margin" hidden>
+          <label class="uk-form-label">4. Cât de des participi la astfel de evenimente?</label>
+          <div class="uk-form-controls">
+           <label><input class="uk-radio" type="radio" name="q4" value="relax"> Foarte rar</label><br>
+           <label><input class="uk-radio" type="radio" name="q4" value="carte"> O dată pe lună</label><br>
+           <label><input class="uk-radio" type="radio" name="q4" value="creativ"> De câteva ori pe lună</label>
+          </div>
+        </div>
+
+        <div class="quiz-step uk-margin" hidden>
+          <label class="uk-form-label">5. Ce ți-ar plăcea să primești la finalul unui eveniment?</label>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="q5" value="carte"> O recomandare de carte</label><br>
+            <label><input class="uk-radio" type="radio" name="q5" value="creativ"> Un mic obiect handmade</label><br>
+            <label><input class="uk-radio" type="radio" name="q5" value="relax"> Un playlist cu muzică tematică</label>
+          </div>
+        </div>
+
+        <button type="button" class="uk-button uk-button-primary" id="next-button">Next</button>
+        <button type="submit" class="uk-button uk-button-secondary" id="submit-button" hidden>Trimite</button>
+      </form>
+
+      <div id="quiz-result" class="uk-alert-success uk-margin-top" uk-alert hidden></div>
     </div>
   </section>
 
-  <!-- HARTĂ -->
-  <section class="uk-section uk-section-default uk-padding-remove-top">
-    <div class="uk-container">
-      <h2 class="uk-heading-line"><span><span uk-icon="icon: location"></span> Locațiile noastre</span></h2>
-      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=21.2%2C45.7%2C21.3%2C45.8&amp;layer=mapnik&amp;marker=45.755%2C21.225" allowfullscreen></iframe>
-    </div>
-  </section>
 
   <!-- EVENIMENTE ANTERIOARE -->
   <section class="uk-section uk-section-default">
@@ -152,61 +204,75 @@
 </section>
 
 
-  <!-- SLIDER EVENIMENTE DRAGI -->
-  <section class="uk-section uk-section-muted">
-    <div class="uk-container">
-      <h2>Evenimente dragi nouă</h2>
-      <div uk-slider>
-        <div class="uk-position-relative">
-          <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
-            <li>
-              <div class="uk-inline">
-                <img src="img/event-s1.jpeg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-center uk-text-center">
-                  <h4>Romanul Săptămânii – Dezbateri între rânduri</h4>
-                </div>
+  <!-- SLIDER EVENIMENTE SPECIALE -->
+<section class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <h2 class="uk-text-center uk-heading-line"><span>Momente dragi nouă</span></h2>
+
+    <div uk-slider>
+      <div class="uk-position-relative">
+        <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+
+          <li>
+            <div class="uk-inline">
+              <img class="uk-border-rounded slider-img" src="img/event-s1.jpeg" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-overlay-slide-bottom">
+                <h4>Lecturi de seară: club tematic în pijamale</h4>
               </div>
-            </li>
-            <li>
-              <div class="uk-inline">
-                <img src="img/event-s2.jpeg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-center uk-text-center">
-                  <h4>Scriitori vs. Cititori – dezbatere live</h4>
-                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="uk-inline">
+              <img class="uk-border-rounded slider-img" src="img/event-s2.jpeg" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-overlay-slide-bottom">
+                <h4>Povestea de seară în familie: lectură intergenerațională</h4>
               </div>
-            </li>
-            <li>
-              <div class="uk-inline">
-                <img src="img/event-s3.jpeg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-center uk-text-center">
-                  <h4>Marți de Poezie – Volumul invitat: Ana Blandiana</h4>
-                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="uk-inline">
+              <img class="uk-border-rounded slider-img" src="img/event-s3.jpeg" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-overlay-slide-bottom">
+                <h4>Picnic literar: Poezie și romane pe malul apei</h4>
               </div>
-            </li>
-            <li>
-              <div class="uk-inline">
-                <img src="img/event-s4.jpeg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-center uk-text-center">
-                  <h4>Lectura Lunii: Serile cu Virginia Woolf</h4>
-                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="uk-inline">
+              <img class="uk-border-rounded slider-img" src="img/event-s4.jpeg" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-overlay-slide-bottom">
+                <h4>Lectură introspectivă în natură: eseuri de viață</h4>
               </div>
-            </li>
-            <li>
-                <div class="uk-inline">
-                  <img src="img/event-s5.webp" alt="">
-                  <div class="uk-overlay uk-overlay-primary uk-position-center uk-text-center">
-                    <h4>Lectura Lunii: Serile cu Virginia Woolf</h4>
-                  </div>
-                </div>
-            </li>
-          </ul>
-          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous"><span uk-icon="icon: chevron-left"></span></a>
-          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next"><span uk-icon="icon: chevron-right"></span></a>
-        </div>
-        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="uk-inline">
+              <img class="uk-border-rounded slider-img" src="img/event-s5.webp" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-overlay-slide-bottom">
+                <h4>Reconstituiri istorice: Lectura ca spectacol vintage</h4>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+          <span uk-icon="icon: chevron-left"></span>
+        </a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+          <span uk-icon="icon: chevron-right"></span>
+        </a>
       </div>
+
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
     </div>
-  </section>
+  </div>
+</section>
+
 
 </main>
 
@@ -239,6 +305,8 @@
     </div>
   </section>
 </footer>
+
+  <script src="js/quiz.js"></script>
 
 </body>
 </html>
