@@ -13438,3 +13438,52 @@ h1, h2, h3 {
     padding: 20px;
   }
 }
+
+/*Footer*/
+footer {
+  background-color: #111; /* fundal negru închis */
+  color: #fff; /* text alb */
+  font-size: 1.05rem;
+  padding: 20px 0; /* ușor crescut pentru echilibru vizual */
+  line-height: 1.6;
+}
+
+footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 1.05rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #32d296; /* verde UIkit la hover */
+}
+
+footer .uk-list li {
+  margin-bottom: 8px;
+}
+
+footer .uk-icon-button {
+  background-color: #222;
+  color: #fff;
+  margin: 5px;
+}
+
+footer .uk-icon-button:hover {
+  background-color: #32d296;
+  color: #fff;
+}
+
+footer .uk-text-center p {
+  margin: 15px 0 5px 0;
+  font-size: 0.95rem;
+}
+
+
